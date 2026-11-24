@@ -8,7 +8,7 @@ import PackageDescription
 // Apps link with -ObjC (Other Linker Flags), which keeps a static adapter's classes.
 //
 // Versions: 7.2.x works with BidmadSDK 7.2.x.
-// The part after "+" is the AdsGlobalPackage version this build pins (8.4.0-release.5).
+// The part after "+" is the AdsGlobalPackage version this build pins (8.4.0-release.7).
 let package = Package(
   name: "BidmadPangleAdapter",
   platforms: [.iOS(.v15)],
@@ -16,8 +16,8 @@ let package = Package(
     .library(name: "BidmadPangleAdapter", targets: ["BidmadPangleAdapterTarget"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/bidmad/BidmadSDK-SPM.git", .upToNextMinor(from: "7.2.0-dev.4")),
-    .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.4.0-release.5"),
+    .package(url: "https://github.com/bidmad/BidmadSDK-SPM.git", .upToNextMinor(from: "7.2.0-dev.5")),
+    .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.4.0-release.7"),
   ],
   targets: [
     .target(
@@ -30,8 +30,8 @@ let package = Package(
     ),
     .binaryTarget(
       name: "BidmadPangleAdapter",
-      url: "https://github.com/bidmad/BidmadPangleAdapter-SPM/releases/download/7.2.0-dev.4+8.4.0-release.5/BidmadPangleAdapter.xcframework.zip",
-      checksum: "86160984fc5f82fc1edbcc8fcd8a1a47a8aaae8988f071a5d98a0894502a0f33"
+      url: "https://github.com/bidmad/BidmadPangleAdapter-SPM/releases/download/7.2.0-dev.5+8.4.0-release.7/BidmadPangleAdapter.xcframework.zip",
+      checksum: "21be5527cfa8dd89fee84770d6e233e4e2048729e4d0adf0ea5eec286564682f"
     ),
   ]
 )
