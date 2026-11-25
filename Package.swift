@@ -16,7 +16,7 @@ let package = Package(
     .library(name: "BidmadPangleAdapter", targets: ["BidmadPangleAdapterTarget"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/bidmad/BidmadSDK-SPM.git", .upToNextMinor(from: "7.2.0-dev.7")),
+    .package(url: "https://github.com/bidmad/BidmadSDK-SPM.git", .upToNextMinor(from: "7.2.0")),
     .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.4.0-release.7"),
   ],
   targets: [
@@ -30,8 +30,8 @@ let package = Package(
     ),
     .binaryTarget(
       name: "BidmadPangleAdapter",
-      url: "https://github.com/bidmad/BidmadPangleAdapter-SPM/releases/download/7.2.0-dev.7+8.4.0-release.7/BidmadPangleAdapter.xcframework.zip",
-      checksum: "2deb7220ea2f1641748e4765d0e942d5fab676466fdb9bb61aa8c6281509a17d"
+      url: "https://github.com/bidmad/BidmadPangleAdapter-SPM/releases/download/7.2.0+8.4.0-release.7/BidmadPangleAdapter.xcframework.zip",
+      checksum: "f0acce121ec80dcdc79f988bb3f2cacf73a81ae015ea97b4a636e8764c1a86e6"
     ),
   ]
 )
